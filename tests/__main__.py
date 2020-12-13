@@ -1,0 +1,5 @@
+from test_flatten_array import run_test_flatten_array
+from test_temperature_analysis import run_test_temparature_analysis
+
+run_test_flatten_array()
+run_test_temparature_analysis()
