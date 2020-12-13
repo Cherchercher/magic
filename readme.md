@@ -40,7 +40,7 @@ flatten_array_recursive(test_array_1)
 - temperature_analysis
 
 arguments:
-python file_to_execute path_to_csv_file start_date_in_float end_date_in_float
+python file_to_execute path_to_csv_file start_date_in_float (inclusive) end_date_in_float (inclusive)
 
 Example command line input:
 `python answers/temperature_analysis.py ../downloads/data.csv 2000.0 2000.456`
