@@ -31,9 +31,6 @@ Temperature analysis is written with the Pandas package, a very common tool for 
 - Download forked repo and run `make init`
 
 # Running the functions
-
-- flatten array
-
 ```
 from answers import flatten_array_recursive
 test_array_1 = [[1, 2, [3]], 4]
@@ -42,10 +39,13 @@ flatten_array_recursive(test_array_1)
 
 - temperature_analysis
 
-command line input:
+arguments:
+python file_to_execute path_to_csv_file start_date_in_float (inclusive) end_date_in_float (inclusive)
+
+Example command line input:
 `python answers/temperature_analysis.py ../downloads/data.csv 2000.0 2000.456`
 
-command line output:
+Example command line output:
 `lowest temperature in the dataset occurs in station_id 676223, date 2010.5420000000001. maximum temperature fluctuation across all dates occurs in station_id 735181. maximum temperature fluctuation in date range 2000.0 - 2000.456 occurs in station_id 659516.`
 
 # Testing
@@ -56,7 +56,7 @@ command line output:
 
 # Final Thoughts
 
-If I spend more time on this, I will check for valid data input and cover edge test cases.
+If I spend more time on this, I will check for valid data input and brainstorm on more edge test cases.
 
 I will implement temperature data analsysis without pandas to see if there's improvements on runtime and readability.
 
